@@ -83,12 +83,9 @@ if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}.dsc ]; then
 fi
 
 cd ${WORKDIR}
-if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_amd64.changes ]; then
-	echo "==> Making a clean build"
-	pbuilder-dist ${UBUNTU_RELEASE} build libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}.dsc
-
+if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.changes ]; then
 	echo "==> Upload packages to Launchpad PPA"
-	dput ppa:skolobov/ppa libressl_*.changes
+	dput ppa:skolobov/ppa libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.changes
 fi
 echo "==> Built Ubuntu package for LibreSSL"
 
@@ -101,7 +98,7 @@ echo "==> Download PeerVPN"
 PEERVPN_ARCHIVE="peervpn-${PEERVPN_VERSION}.tar.gz"
 if [ ! -f ${PEERVPN_ARCHIVE} ]; then
 	wget ${PEERVPN_SITE}/${PEERVPN_ARCHIVE}
-	# Copy original tarball 
+	# Copy original tarball
 	cp ${PEERVPN_ARCHIVE} peervpn_${PEERVPN_VERSION/-/.}.orig.tar.gz
 fi
 
@@ -124,11 +121,9 @@ if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}.dsc ]; then
 fi
 
 cd ${WORKDIR}
-if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_amd64.changes ]; then
-	echo "==> Making a clean build"
-	pbuilder-dist ${UBUNTU_RELEASE} build peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}.dsc
+if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.changes ]; then
 	echo "==> Upload packages to Launchpad PPA"
-	dput ppa:skolobov/ppa peervpn_*.changes
+	dput ppa:skolobov/ppa peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.changes
 fi
 echo "==> Built Ubuntu package for PeerVPN"
 
