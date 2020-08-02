@@ -90,8 +90,9 @@ fi
 echo "==> Built Ubuntu package for LibreSSL"
 
 # Install build-time dependencies for PeerVPN
-sudo dpkg -i libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_amd64.deb
-sudo apt-get install -y zlib1g-dev
+sudo apt-add-repository ppa:skolobov/ppa
+sudo apt-get update
+sudo apt-get install -y libressl zlib1g-dev
 
 echo "==> Download PeerVPN"
 # Download PeerVPN release
