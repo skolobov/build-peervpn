@@ -4,6 +4,7 @@
 # Configurable parameters
 export DEBFULLNAME="Sergei Kolobov"
 export DEBEMAIL="sergei@kolobov.com"
+export LAUNCHPAD_PPA="ppa:skolobov/ppa"
 export UBUNTU_RELEASE="bionic"
 export LIBRESSL_SITE="https://ftp.openbsd.org/pub/OpenBSD/LibreSSL"
 export LIBRESSL_VERSION="3.1.3"
@@ -85,13 +86,16 @@ fi
 cd ${WORKDIR}
 if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.ppa.upload ]; then
 	echo "==> Upload packages to Launchpad PPA"
-	dput ppa:skolobov/ppa libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.changes
+	dput ${LAUNCHPAD_PPA} libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.changes
 fi
 echo "==> Built Ubuntu package for LibreSSL"
 
+# Add our Launchpad PPA package repository
+if [ ! -f /etc/apt/sources.list.d/skolobov-ubuntu-ppa-${UBUNTU_RELEASE}.list ]; then
+	sudo apt-add-repository ${LAUNCHPAD_PPA}
+	sudo apt-get update
+fi
 # Install build-time dependencies for PeerVPN
-sudo apt-add-repository ppa:skolobov/ppa
-sudo apt-get update
 sudo apt-get install -y libressl zlib1g-dev
 
 echo "==> Download PeerVPN"
@@ -124,7 +128,7 @@ fi
 cd ${WORKDIR}
 if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.ppa.upload ]; then
 	echo "==> Upload packages to Launchpad PPA"
-	dput ppa:skolobov/ppa peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.changes
+	dput ${LAUNCHPAD_PPA} peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.changes
 fi
 echo "==> Built Ubuntu package for PeerVPN"
 
