@@ -83,7 +83,7 @@ if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}.dsc ]; then
 fi
 
 cd ${WORKDIR}
-if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.changes ]; then
+if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.ppa.upload ]; then
 	echo "==> Upload packages to Launchpad PPA"
 	dput ppa:skolobov/ppa libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_source.changes
 fi
@@ -121,7 +121,7 @@ if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}.dsc ]; then
 fi
 
 cd ${WORKDIR}
-if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.changes ]; then
+if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.ppa.upload ]; then
 	echo "==> Upload packages to Launchpad PPA"
 	dput ppa:skolobov/ppa peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_source.changes
 fi
