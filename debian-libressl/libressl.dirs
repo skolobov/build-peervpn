@@ -1,0 +1,14 @@
+usr/local/bin
+usr/local/include
+usr/local/include/openssl
+usr/local/etc
+usr/local/etc/ssl
+usr/local/etc/ssl/certs
+usr/local/lib
+usr/local/lib/pkgconfig
+usr/local/share
+usr/local/share/man
+usr/local/share/man/man5
+usr/local/share/man/man3
+usr/local/share/man/man8
+usr/local/share/man/man1
