@@ -79,7 +79,7 @@ if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}.dsc ]; then
 	echo "==> Copy over customized files"
 	cp ${WORKDIR}/debian-libressl/* debian/
 	echo "==> Build Debian package"
-	dpkg-buildpackage -rfakeroot
+	dpkg-buildpackage -rfakeroot -S
 fi
 
 cd ${WORKDIR}
@@ -88,9 +88,13 @@ if [ ! -f libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_amd64.changes ]; then
 	pbuilder-dist ${UBUNTU_RELEASE} build libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}.dsc
 
 	echo "==> Upload packages to Launchpad PPA"
-	dput ppa:skolobov/ppa libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_amd64.changes
+	dput ppa:skolobov/ppa libressl_*.changes
 fi
 echo "==> Built Ubuntu package for LibreSSL"
+
+# Install build-time dependencies for PeerVPN
+sudo dpkg -i libressl_${LIBRESSL_VERSION}-${LIBRESSL_PKG_VER}_amd64.deb
+sudo apt-get install -y zlib1g-dev
 
 echo "==> Download PeerVPN"
 # Download PeerVPN release
@@ -116,7 +120,7 @@ if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}.dsc ]; then
 	echo "==> Copy over customized files"
 	cp -r ${WORKDIR}/debian-peervpn/* debian/
 	echo "==> Build Debian package"
-	dpkg-buildpackage -rfakeroot
+	dpkg-buildpackage -rfakeroot -S
 fi
 
 cd ${WORKDIR}
@@ -124,7 +128,7 @@ if [ ! -f peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_amd64.changes ]; the
 	echo "==> Making a clean build"
 	pbuilder-dist ${UBUNTU_RELEASE} build peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}.dsc
 	echo "==> Upload packages to Launchpad PPA"
-	dput ppa:skolobov/ppa peervpn_${PEERVPN_VERSION/-/.}-${PEERVPN_PKG_VER}_amd64.changes
+	dput ppa:skolobov/ppa peervpn_*.changes
 fi
 echo "==> Built Ubuntu package for PeerVPN"
 
