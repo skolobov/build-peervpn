@@ -78,7 +78,7 @@ echo "==> Build Debian package"
 dpkg-buildpackage -rfakeroot
 cd ${WORKDIR}
 echo "==> Making a clean build"
-pbuilder-dist bionic build libressl_3.1.3-1ppa1.dsc
+pbuilder-dist ${UBUNTU_RELEASE} build libressl_${LIBRESSL_VERSION}-1ppa1.dsc
 
 echo "==> Upload packages to Launchpad PPA"
 dput ppa:skolobov/ppa *.changes
