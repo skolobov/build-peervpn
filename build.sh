@@ -10,7 +10,7 @@ export LIBRESSL_VERSION="3.1.3"
 export LIBRESSL_PKG_VER="1ppa1"
 export PEERVPN_SITE="https://peervpn.net/files"
 export PEERVPN_VERSION="0-044"
-export PEERVPN_PKG_VER="1ppa1"
+export PEERVPN_PKG_VER="1ppa2"
 
 set -e # exit on any error
 

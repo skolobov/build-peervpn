@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 02 Aug 2020 18:48:36 +0000
+Source: peervpn
+Binary: peervpn
+Architecture: source
+Version: 0.044-1ppa2
+Distribution: bionic
+Urgency: medium
+Maintainer: Sergei Kolobov <sergei@kolobov.com>
+Changed-By: Sergei Kolobov <sergei@kolobov.com>
+Description:
+ peervpn    - open source peer-to-peer VPN
+Changes:
+ peervpn (0.044-1ppa2) bionic; urgency=medium
+ .
+   * Bump package version to properly record dependency on libressl package
+Checksums-Sha1:
+ e4d77b8f86d95d470427920c7cb9c179def43bf5 1108 peervpn_0.044-1ppa2.dsc
+ fc507e705d42f4287de709ca4eeb20707d00e28e 2036 peervpn_0.044-1ppa2.debian.tar.xz
+ 6a313a8277a8fdae96ba245c44668a32a29ade14 5596 peervpn_0.044-1ppa2_source.buildinfo
+Checksums-Sha256:
+ a568d9f0dc7c9f30825e41c5d7067f626af3c3e2478e14d39f1a274f3eacc3e6 1108 peervpn_0.044-1ppa2.dsc
+ 322061d1492d6ea4316b0209de1c9d6886e07dceed9cc8701a1649c77b4d501d 2036 peervpn_0.044-1ppa2.debian.tar.xz
+ 497dfabe9670fbab71b4566a949411758144c073d60cb34d7ca53932c03b59be 5596 peervpn_0.044-1ppa2_source.buildinfo
+Files:
+ 9941eeda1165ed764e6b4d6999438901 1108 net optional peervpn_0.044-1ppa2.dsc
+ 269cde2655b65e36eb222eb5baa1f07d 2036 net optional peervpn_0.044-1ppa2.debian.tar.xz
+ 281681a01b940e3b1c0c3fbde7eea7ef 5596 net optional peervpn_0.044-1ppa2_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXycLZBMcc2VyZ2VpQGtv
+bG9ib3YuY29tAAoJEBTsbmk7pTQBlRgAn3aex+rZjNgywpcZZmJiv0UMFzmWAJ9e
+mxppvSCFoInD8ngw/y9kIhh0YA==
+=UULU
+-----END PGP SIGNATURE-----
