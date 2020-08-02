@@ -1,0 +1,20 @@
+Source: peervpn
+Section: unknown
+Priority: optional
+Maintainer: Sergei Kolobov <sergei@kolobov.com>
+Build-Depends: debhelper (>= 10), libressl, zlib1g-dev
+Standards-Version: 4.1.2
+Homepage: https://peervpn.net
+
+Package: peervpn
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: open source peer-to-peer VPN
+ PeerVPN is a software that builds virtual ethernet networks between
+ multiple computers. Such a virtual network can be useful to facilitate
+ direct communication that applications like file sharing or gaming may
+ need.  A virtual network built by PeerVPN uses a full mesh topology. 
+ All nodes talk directly to each other, there is no need for a central
+ server. If one node goes down, the rest of the network is unaffected.
+
+

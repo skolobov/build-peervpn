@@ -1,0 +1,16 @@
+## Description: Install PeerVPN binary into /usr/local/bin (not sbin)
+## Origin/Author: Sergei Kolobov <sergei@kolobov.com>
+## Bug: bug URL
+Index: peervpn-0-044/Makefile
+===================================================================
+--- peervpn-0-044.orig/Makefile
++++ peervpn-0-044/Makefile
+@@ -7,6 +7,7 @@ peervpn: peervpn.o
+ peervpn.o: peervpn.c
+ 
+ install:
+-	install peervpn /usr/local/sbin/peervpn
++	mkdir -p $(DESTDIR)/usr/local/bin
++	install peervpn $(DESTDIR)/usr/local/bin/peervpn
+ clean:
+ 	rm -f peervpn peervpn.o

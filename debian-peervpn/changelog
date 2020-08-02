@@ -1,0 +1,6 @@
+peervpn (0.044-1ppa1) bionic; urgency=medium
+
+  * Initial PeerVPN 0.044 package for Ubuntu 18.04 (bionic)
+  * debian/patches/01-Makefile.patch: install into /usr/local/bin
+
+ -- Sergei Kolobov <sergei@kolobov.com>  Sun, 02 Aug 2020 10:56:57 +0000
