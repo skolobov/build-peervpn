@@ -4,23 +4,17 @@ Hash: SHA1
 Format: 1.0
 Source: libressl
 Binary: libressl
-Architecture: amd64 source
+Architecture: source
 Version: 3.1.3-1ppa1
 Checksums-Md5:
- dcee20c72c49f167741013b8f4ef9f0a 1157 libressl_3.1.3-1ppa1.dsc
- 321835fc77b415ed85399712ba0ff9b2 3603748 libressl-dbgsym_3.1.3-1ppa1_amd64.ddeb
- f146be94fdd24d50200354ec4be98dee 2858248 libressl_3.1.3-1ppa1_amd64.deb
+ cc6ea3c33a9c25337f11014b7f2959a8 1140 libressl_3.1.3-1ppa1.dsc
 Checksums-Sha1:
- a8d353d68e0fd414b386dd035f4d0b9da925ce53 1157 libressl_3.1.3-1ppa1.dsc
- 2fec28f8406c897f53e74d7bfb1470d1ab525946 3603748 libressl-dbgsym_3.1.3-1ppa1_amd64.ddeb
- 4034637919c75d6df0f33e1e1439981839169c60 2858248 libressl_3.1.3-1ppa1_amd64.deb
+ fc58dee5aa31103740b4837f45c3137a10c40ab8 1140 libressl_3.1.3-1ppa1.dsc
 Checksums-Sha256:
- e0934d608a34ddfe6553e306d424c936396096f87d60c38b1825c5970ff99bb0 1157 libressl_3.1.3-1ppa1.dsc
- 6e10f49ff32a87c5cb083a99bd6a182937d24c43315d83c8946e17896f91b9c6 3603748 libressl-dbgsym_3.1.3-1ppa1_amd64.ddeb
- 1891a26d7981bad8cfbc5c166494abaae17a8e51ddfa97c2ed210fda61993a26 2858248 libressl_3.1.3-1ppa1_amd64.deb
+ bd22cfc253c9d563f160aeaed5b565b2e8b38a9895401bbea8488991180c719e 1140 libressl_3.1.3-1ppa1.dsc
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 02 Aug 2020 09:49:57 +0000
+Build-Date: Sun, 02 Aug 2020 17:12:03 +0000
 Installed-Build-Depends:
  autoconf (= 2.69-11),
  automake (= 1:1.15.1-3ubuntu2),
@@ -173,8 +167,8 @@ Environment:
 
 -----BEGIN PGP SIGNATURE-----
 
-iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXyaMTxMcc2VyZ2VpQGtv
-bG9ib3YuY29tAAoJEBTsbmk7pTQBKqAAnjpWsshsZqFTkdillVp2TkbNwcQBAKCZ
-I3NELtzWFkECEG56Gybk1dETpw==
-=sRmx
+iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXybz4xMcc2VyZ2VpQGtv
+bG9ib3YuY29tAAoJEBTsbmk7pTQBOvMAn2pKvMOEEr4y0mAVn/FFuiXsxi3tAJ95
+HzwLaIl8soMmSC+IUu2kiY+L4Q==
+=/BQe
 -----END PGP SIGNATURE-----

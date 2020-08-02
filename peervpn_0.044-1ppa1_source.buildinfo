@@ -4,23 +4,17 @@ Hash: SHA1
 Format: 1.0
 Source: peervpn
 Binary: peervpn
-Architecture: amd64 source
+Architecture: source
 Version: 0.044-1ppa1
 Checksums-Md5:
- 4c7392dc7bbf7358a648b3d04d83b18c 1112 peervpn_0.044-1ppa1.dsc
- 8949b3b6d204444d14430948a1831844 117176 peervpn-dbgsym_0.044-1ppa1_amd64.ddeb
- 2a08415160e0237af1d16001fedf2c4b 36420 peervpn_0.044-1ppa1_amd64.deb
+ 6f1ba3ddedf2a5ebf1db43ebe3a75633 1108 peervpn_0.044-1ppa1.dsc
 Checksums-Sha1:
- 39a304d13d50e3674e147f1bbbea48497a7a268f 1112 peervpn_0.044-1ppa1.dsc
- 7dbc83961243ca511134777d62492528b093e26c 117176 peervpn-dbgsym_0.044-1ppa1_amd64.ddeb
- b76405dee02f38361f76fb1d2e9ab5eb7811988d 36420 peervpn_0.044-1ppa1_amd64.deb
+ dedf7e9a28123a8e783a03ad98a7ef29c01cb090 1108 peervpn_0.044-1ppa1.dsc
 Checksums-Sha256:
- cca1417118fb625084b03b0b778ba68def454532ef4c780be2bcabb8c2eb5162 1112 peervpn_0.044-1ppa1.dsc
- 862fc4f40a3ef8f7944a7d102a81fcc5793e1797dc97e685b957b894d1b2441a 117176 peervpn-dbgsym_0.044-1ppa1_amd64.ddeb
- 68ab54fdc9f6c4d32ee887d5d1d051a2c3428057811fcdccb936493e98c5bfda 36420 peervpn_0.044-1ppa1_amd64.deb
+ 46ca36a2cec32e3145f0f107c85a1b18ef22b6c0a1511b21c000b7d4290a4f5a 1108 peervpn_0.044-1ppa1.dsc
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 02 Aug 2020 13:28:14 +0000
+Build-Date: Sun, 02 Aug 2020 17:08:11 +0000
 Installed-Build-Depends:
  autoconf (= 2.69-11),
  automake (= 1:1.15.1-3ubuntu2),
@@ -173,8 +167,8 @@ Environment:
 
 -----BEGIN PGP SIGNATURE-----
 
-iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXya/bhMcc2VyZ2VpQGtv
-bG9ib3YuY29tAAoJEBTsbmk7pTQB9YAAn0E1OHlnESuINQOPVVghIxL5nPbAAJ0f
-Ez+Zq7vm2g1S+BgMPhMsVR4z/g==
-=InIL
+iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXyby+xMcc2VyZ2VpQGtv
+bG9ib3YuY29tAAoJEBTsbmk7pTQB2kgAn2pM2tjPYMK8e6frfwwuHk9KJduuAKCH
+kPGLTcHDafB9scsjdxUVp+SVPw==
+=uj73
 -----END PGP SIGNATURE-----

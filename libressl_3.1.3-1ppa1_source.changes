@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 01 Aug 2020 19:15:13 +0000
+Source: libressl
+Binary: libressl
+Architecture: source
+Version: 3.1.3-1ppa1
+Distribution: bionic
+Urgency: medium
+Maintainer: Sergei Kolobov <sergei@kolobov.com>
+Changed-By: Sergei Kolobov <sergei@kolobov.com>
+Description:
+ libressl   - TLS/crypto stack forked from OpenSSL
+Changes:
+ libressl (3.1.3-1ppa1) bionic; urgency=medium
+ .
+   * Initial package version for Ubuntu 18.04 bionic
+Checksums-Sha1:
+ fc58dee5aa31103740b4837f45c3137a10c40ab8 1140 libressl_3.1.3-1ppa1.dsc
+ 7f747cb9eef1709495e4459176431596384e78c8 3766345 libressl_3.1.3.orig.tar.gz
+ 67b4509129e3ea4730a102fc571dadb0d245b12f 3492 libressl_3.1.3-1ppa1.debian.tar.xz
+ 70e696aa876c8eccb59e6121ec7ccedae7c5fda4 5603 libressl_3.1.3-1ppa1_source.buildinfo
+Checksums-Sha256:
+ bd22cfc253c9d563f160aeaed5b565b2e8b38a9895401bbea8488991180c719e 1140 libressl_3.1.3-1ppa1.dsc
+ c76b0316acf612ecb62f5cb014a20d972a663bd9e40abf952a86f3b998b69fa0 3766345 libressl_3.1.3.orig.tar.gz
+ 30d60bb392748b04075fb99a445a456a828f4424f75a5fb91c911798bca663fc 3492 libressl_3.1.3-1ppa1.debian.tar.xz
+ 0b9521a0f6bdcae141e06f673bdaa2ed80fa979167d0e28ff3e03d43719f451d 5603 libressl_3.1.3-1ppa1_source.buildinfo
+Files:
+ cc6ea3c33a9c25337f11014b7f2959a8 1140 utils optional libressl_3.1.3-1ppa1.dsc
+ 34b29b3e8ccebc4144f85132f77a6abc 3766345 utils optional libressl_3.1.3.orig.tar.gz
+ 827f1eacfcb766a924664957c11c7c9c 3492 utils optional libressl_3.1.3-1ppa1.debian.tar.xz
+ 91591097d87315ab49c8402d410583be 5603 utils optional libressl_3.1.3-1ppa1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXybz4xMcc2VyZ2VpQGtv
+bG9ib3YuY29tAAoJEBTsbmk7pTQBMQ8An1rcZmigUdRkDFIPQ06MBeSbBjHJAJ41
+w8akgT0e8JNR1E/RzS7bLTzRgA==
+=vNiQ
+-----END PGP SIGNATURE-----

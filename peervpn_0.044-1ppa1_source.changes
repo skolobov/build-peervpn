@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 02 Aug 2020 10:56:57 +0000
+Source: peervpn
+Binary: peervpn
+Architecture: source
+Version: 0.044-1ppa1
+Distribution: bionic
+Urgency: medium
+Maintainer: Sergei Kolobov <sergei@kolobov.com>
+Changed-By: Sergei Kolobov <sergei@kolobov.com>
+Description:
+ peervpn    - open source peer-to-peer VPN
+Changes:
+ peervpn (0.044-1ppa1) bionic; urgency=medium
+ .
+   * Initial PeerVPN 0.044 package for Ubuntu 18.04 (bionic)
+   * debian/patches/01-Makefile.patch: install into /usr/local/bin
+Checksums-Sha1:
+ dedf7e9a28123a8e783a03ad98a7ef29c01cb090 1108 peervpn_0.044-1ppa1.dsc
+ 91b237943370aec2cadcc74d4c725e8f19aca15a 82107 peervpn_0.044.orig.tar.gz
+ 92b606a4b932b1f9fbba6962c9d52380f9f2ce5d 1980 peervpn_0.044-1ppa1.debian.tar.xz
+ 4bb92f486cd2f7057bce9433bde5ef1cdb7e6398 5596 peervpn_0.044-1ppa1_source.buildinfo
+Checksums-Sha256:
+ 46ca36a2cec32e3145f0f107c85a1b18ef22b6c0a1511b21c000b7d4290a4f5a 1108 peervpn_0.044-1ppa1.dsc
+ 4402d5ce956d95ff85b8aeb455d984b9eb9c2e6a058d2580c8e90da12fed8392 82107 peervpn_0.044.orig.tar.gz
+ 0dc20abb939782860e1b873f860b6468c065e6e45965fff0c5c3e1ea3d98f34a 1980 peervpn_0.044-1ppa1.debian.tar.xz
+ 94d2b8b25f0deec1e7e419c60963db19489eb0b137e7892a088bd9ecabfbbdad 5596 peervpn_0.044-1ppa1_source.buildinfo
+Files:
+ 6f1ba3ddedf2a5ebf1db43ebe3a75633 1108 net optional peervpn_0.044-1ppa1.dsc
+ 3acb4cbf083c0bdacc90ad7d2403b1bc 82107 net optional peervpn_0.044.orig.tar.gz
+ 4eb42143b9c0c49b62aef0654cf84444 1980 net optional peervpn_0.044-1ppa1.debian.tar.xz
+ 587e1fed44af01f157c907220cc13f5e 5596 net optional peervpn_0.044-1ppa1_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXyby+xMcc2VyZ2VpQGtv
+bG9ib3YuY29tAAoJEBTsbmk7pTQBhLcAmwcQ6Pjuhs0nvmJ5yXyT2XdiwoKHAJ9n
+Xbrt+DXMsw5bN7wdC13DCm+1kg==
+=t2+m
+-----END PGP SIGNATURE-----
