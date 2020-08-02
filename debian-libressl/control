@@ -1,17 +1,17 @@
 Source: libressl
-Section: unknown
+Section: utils
 Priority: optional
 Maintainer: Sergei Kolobov <sergei@kolobov.com>
-Build-Depends: debhelper (>= 10), autotools-dev, mime-support, file, cpio, gawk
+Build-Depends: debhelper (>= 10), mime-support, file, cpio, gawk
 Standards-Version: 4.1.2
 Homepage: https://www.libressl.org
 
 Package: libressl
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: LibreSSL is a version of the TLS/crypto stack forked from OpenSSL
+Description: TLS/crypto stack forked from OpenSSL
  LibreSSL releases contain several parts:
- * libcrypto: a library of cryptography fundamentals
- * libssl: a TLS library
- * libtls: a new TLS library, designed to make it easier to write foolproof applications
- * Various utilities such as openssl(1), nc(1), and ocspcheck(8).
+  * libcrypto: a library of cryptography fundamentals
+  * libssl: a TLS library
+  * libtls: a new TLS library, designed to make it easier to write foolproof applications
+  * Various utilities such as openssl(1), nc(1), and ocspcheck(8).

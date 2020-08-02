@@ -1,5 +1,5 @@
 Source: peervpn
-Section: unknown
+Section: net
 Priority: optional
 Maintainer: Sergei Kolobov <sergei@kolobov.com>
 Build-Depends: debhelper (>= 10), libressl, zlib1g-dev
