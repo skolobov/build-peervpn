@@ -43,7 +43,7 @@ echo "==> Upload GPG key to Ubuntu keyserver"
 gpg --keyserver keyserver.ubuntu.com --send-keys ${GPG_KEY_ID}
 
 echo "==> Download LibreSSL"
-# Download and import LibreSSL release signign key first
+# Download and import LibreSSL release signing key first
 if [ ! -f libressl.asc ]; then
 	wget ${LIBRESSL_SITE}/libressl.asc
 fi
