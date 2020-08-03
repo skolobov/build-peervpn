@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 02 Aug 2020 23:22:09 +0000
+Source: peervpn
+Binary: peervpn
+Architecture: source
+Version: 0.044-1ppa3
+Distribution: bionic
+Urgency: medium
+Maintainer: Sergei Kolobov <sergei@kolobov.com>
+Changed-By: Sergei Kolobov <sergei@kolobov.com>
+Description:
+ peervpn    - open source peer-to-peer VPN
+Changes:
+ peervpn (0.044-1ppa3) bionic; urgency=medium
+ .
+   * Installing binaries into /usr/local/* actually goes against Debian/Ubuntu
+     policies and prevents us from using Launchpad PPA to build our packages -
+     thus, go with the flow and install into /usr/bin instead
+Checksums-Sha1:
+ b58867901d443ca7842bb2adb19ead9eb6c420a1 1108 peervpn_0.044-1ppa3.dsc
+ 4c9032b0e919405cd45dd4c3a266ae0624400fd6 2124 peervpn_0.044-1ppa3.debian.tar.xz
+ 33dd8ff731d2136d22f0ee301e4921d3e4821138 5596 peervpn_0.044-1ppa3_source.buildinfo
+Checksums-Sha256:
+ daea841d867214ef6b9329267bf18c0ab132207433b1cc67db937731e54e5b0a 1108 peervpn_0.044-1ppa3.dsc
+ 538cd02c420a43e8660e323f45e7e3e1ebd15b3f30824c36f39cc65ecc1e76c2 2124 peervpn_0.044-1ppa3.debian.tar.xz
+ 969481a6f885946e95bdfa8d6807d7ba21d45b2a7515dd0bc7cbdfd57b7940af 5596 peervpn_0.044-1ppa3_source.buildinfo
+Files:
+ cbcf38037a418a279d0cbeb701423b0c 1108 net optional peervpn_0.044-1ppa3.dsc
+ 0a81451770a1c7b099afb8071e98fa7e 2124 net optional peervpn_0.044-1ppa3.debian.tar.xz
+ 491349f74d4e50bffab39ab4f89d794b 5596 net optional peervpn_0.044-1ppa3_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXydNDBMcc2VyZ2VpQGtv
+bG9ib3YuY29tAAoJEBTsbmk7pTQB4QkAnRE8lPyH40znZyJefKoIOEdH6vqyAJwM
+bn+Z9hYDajySxPUXiE9fLuyHSg==
+=pJ1v
+-----END PGP SIGNATURE-----

@@ -1,3 +1,23 @@
+peervpn (0.044-1ppa4) bionic; urgency=medium
+
+  * Install with proper owner/group and mode
+
+ -- Sergei Kolobov <sergei@kolobov.com>  Sun, 02 Aug 2020 23:38:04 +0000
+
+peervpn (0.044-1ppa3) bionic; urgency=medium
+
+  * Installing binaries into /usr/local/* actually goes against Debian/Ubuntu
+    policies and prevents us from using Launchpad PPA to build our packages -
+    thus, go with the flow and install into /usr/bin instead
+
+ -- Sergei Kolobov <sergei@kolobov.com>  Sun, 02 Aug 2020 23:22:09 +0000
+
+peervpn (0.044-1ppa2) bionic; urgency=medium
+
+  * Bump package version to properly record dependency on libressl package
+
+ -- Sergei Kolobov <sergei@kolobov.com>  Sun, 02 Aug 2020 18:48:36 +0000
+
 peervpn (0.044-1ppa1) bionic; urgency=medium
 
   * Initial PeerVPN 0.044 package for Ubuntu 18.04 (bionic)

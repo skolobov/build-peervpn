@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 02 Aug 2020 23:38:04 +0000
+Source: peervpn
+Binary: peervpn
+Architecture: source amd64
+Version: 0.044-1ppa4
+Distribution: bionic
+Urgency: medium
+Maintainer: Sergei Kolobov <sergei@kolobov.com>
+Changed-By: Sergei Kolobov <sergei@kolobov.com>
+Description:
+ peervpn    - open source peer-to-peer VPN
+Changes:
+ peervpn (0.044-1ppa4) bionic; urgency=medium
+ .
+   * Install with proper owner/group and mode
+Checksums-Sha1:
+ b61bd8ec1df8e4cc8b9d7125e19440dd769a5ad9 1108 peervpn_0.044-1ppa4.dsc
+ 52baf14abfafabe01cd4c14d5d91df4ce25e23e8 2188 peervpn_0.044-1ppa4.debian.tar.xz
+ f0c8f29bb9d3d68a7a37610e11ac7372f14504a4 117164 peervpn-dbgsym_0.044-1ppa4_amd64.ddeb
+ 9f69f50a159da58528d1416ff1e5717346b3f1d1 6129 peervpn_0.044-1ppa4_amd64.buildinfo
+ e436fe5e70291dc8a4f5fd06930e6675e5ce67f7 36612 peervpn_0.044-1ppa4_amd64.deb
+Checksums-Sha256:
+ d6196366183e3c702ce0c34b12f78eb0865e84b85957bff56674579e0e8cbc05 1108 peervpn_0.044-1ppa4.dsc
+ df32e998922b9b21da530da056781305f1f811aac9a37dc8cf22d1fcaabde36c 2188 peervpn_0.044-1ppa4.debian.tar.xz
+ 40d62b4e6c4727b2f1fa5ef7386b96ff2ed943e57b0fa88aae9ef9df7d40e344 117164 peervpn-dbgsym_0.044-1ppa4_amd64.ddeb
+ 74f0616ab8800f24e590d205fb122686f95a131f1f92a922d3cc7d4f6006598a 6129 peervpn_0.044-1ppa4_amd64.buildinfo
+ 5981d56de8366f649e4cff389551e796ba5d16bbb31d7a0ba0006450c794bb91 36612 peervpn_0.044-1ppa4_amd64.deb
+Files:
+ 69e8844f6e2882a0afb97408f468af6d 1108 net optional peervpn_0.044-1ppa4.dsc
+ 44c062f55af806143461006dc32f860d 2188 net optional peervpn_0.044-1ppa4.debian.tar.xz
+ 321cddb3f79c7e8529a4d76ada31c9d5 117164 debug optional peervpn-dbgsym_0.044-1ppa4_amd64.ddeb
+ cceffdd25e00e95b24825a8e83ea33e6 6129 net optional peervpn_0.044-1ppa4_amd64.buildinfo
+ deff992bce5e2915a73f7030a5ca12e7 36612 net optional peervpn_0.044-1ppa4_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iHEEARECADEWIQSi9F80BYbMnEk6NHwU7G5pO6U0AQUCXydTABMcc2VyZ2VpQGtv
+bG9ib3YuY29tAAoJEBTsbmk7pTQB+/cAnRO9LL/jcQmVmRsOcPSp2Dby9z1WAJ94
+CZfidCwFGsgg4hQaCunGRVJ3lg==
+=F7VA
+-----END PGP SIGNATURE-----
