@@ -1,4 +1,4 @@
-# build-peervpn
+# Build Ubuntu package for PeerVPN
 
 Build [PeerVPN](https://peervpn.net) package for Ubuntu 18.04 (bionic)
 
@@ -10,10 +10,15 @@ ubuntu$ sudo apt-get update
 ubuntu$ sudo apt-get install -y peervpn
 ```
 
-Alternatively, just run `./install.sh` script included in this repository.
+Alternatively, just run `./install.sh` [script](blob/master/install.sh)
+included in this repository.
 
-Ubuntu packages were build by [Launchpad](https://launchpad.net) and are hosted
-in [Sergei Kolobov PPA](https://launchpad.net/~skolobov/+archive/ubuntu/ppa)
+Separate package for [LibreSSL](https://libressl.org) were also built 
+as a dependency.
+
+Ubuntu packages for PeerVPN and LibreSSL were built by
+[Launchpad](https://launchpad.net) and are now hosted in 
+[Sergei Kolobov PPA](https://launchpad.net/~skolobov/+archive/ubuntu/ppa)
 repository.
 
 Author: [Sergei Kolobov](https://github.com/skolobov)
