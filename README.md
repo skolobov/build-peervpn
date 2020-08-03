@@ -5,9 +5,9 @@ Build [PeerVPN](https://peervpn.net) package for Ubuntu 18.04 (bionic)
 In order to install PeerVPN package, run the following commands:
 
 ```shell
-ubuntu$ sudo apt-add-repository ppa:skolobov/ppa
-ubuntu$ sudo apt-get update
-ubuntu$ sudo apt-get install -y peervpn
+sudo apt-add-repository ppa:skolobov/ppa
+sudo apt-get update
+sudo apt-get install -y peervpn
 ```
 
 Alternatively, just run `./install.sh` [script](install.sh)
