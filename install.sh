@@ -17,3 +17,6 @@ fi
 
 echo "==> Installing PeerVPN"
 sudo apt-get install -y peervpn
+
+echo "==> PeerVPN installed as $(which peervpn)"
+peervpn --help
