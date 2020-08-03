@@ -10,7 +10,7 @@ ubuntu$ sudo apt-get update
 ubuntu$ sudo apt-get install -y peervpn
 ```
 
-Alternatively, just run `./install.sh` [script](blob/master/install.sh)
+Alternatively, just run `./install.sh` [script](install.sh)
 included in this repository.
 
 Separate package for [LibreSSL](https://libressl.org) were also built 
